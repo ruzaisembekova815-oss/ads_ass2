@@ -43,7 +43,7 @@ class MinStack {
         return minStack.peek();
     }
 
-    // ================== TEST ==================
+    
     public static void main(String[] args) {
         MinStack minStack = new MinStack();
 

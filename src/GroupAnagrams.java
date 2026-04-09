@@ -1,3 +1,5 @@
+//Given an array of strings, use a hash map to group the anagrams together.
+
 import java.util.*;
 
 public class GroupAnagrams {

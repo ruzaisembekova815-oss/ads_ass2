@@ -1,3 +1,5 @@
+/*Write a class that implements a Min-Heap from scratch using an 
+array (or ArrayList). Include the core methods: insert, extractMin, and heapify.*/
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -9,13 +11,12 @@ public class MinHeap {
         heap = new ArrayList<>();
     }
 
-    // ================== INSERT ==================
     public void insert(int val) {
         heap.add(val);               // add at the end
         heapifyUp(heap.size() - 1);  // restore heap property
     }
 
-    // ================== EXTRACT MIN ==================
+   
     public int extractMin() {
         if (heap.isEmpty()) {
             throw new RuntimeException("Heap is empty!");
@@ -31,7 +32,7 @@ public class MinHeap {
         return min;
     }
 
-    // ================== HEAPIFY UP ==================
+   
     private void heapifyUp(int index) {
         while (index > 0) {
             int parent = (index - 1) / 2;
@@ -45,7 +46,7 @@ public class MinHeap {
         }
     }
 
-    // ================== HEAPIFY DOWN ==================
+    
     private void heapifyDown(int index) {
         int size = heap.size();
 
@@ -78,7 +79,7 @@ public class MinHeap {
         heap.set(j, temp);
     }
 
-    // ================== HELPER METHODS ==================
+  
     public int peek() {
         if (heap.isEmpty()) throw new RuntimeException("Heap is empty!");
         return heap.get(0);
@@ -92,7 +93,7 @@ public class MinHeap {
         return heap.isEmpty();
     }
 
-    // ================== MAIN (with Scanner) ==================
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         MinHeap minHeap = new MinHeap();

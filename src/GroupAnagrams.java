@@ -33,18 +33,18 @@ public class GroupAnagrams {
 
         System.out.print("Enter number of strings: ");
         int n = sc.nextInt();
-        sc.nextLine();                     // consume newline
+        sc.nextLine();                     
 
         String[] strs = new String[n];
         System.out.println("Enter " + n + " strings:");
 
         for (int i = 0; i < n; i++) {
-            strs[i] = sc.nextLine().trim();   // trim spaces
+            strs[i] = sc.nextLine().trim();   
         }
 
         List<List<String>> result = groupAnagrams(strs);
 
-        System.out.println("\n=== Anagram Groups ===");
+        System.out.println("Anagram Groups:");
         for (List<String> group : result) {
             System.out.println(group);
         }

@@ -51,11 +51,11 @@ class MinStack {
         minStack.push(0);
         minStack.push(-3);
 
-        System.out.println("Current min = " + minStack.getMin());  // Output: -3
+        System.out.println("Current min = " + minStack.getMin()); 
 
         minStack.pop();
 
-        System.out.println("Top element = " + minStack.top());     // Output: 0
-        System.out.println("Current min = " + minStack.getMin());  // Output: -2
+        System.out.println("Top element = " + minStack.top());     
+        System.out.println("Current min = " + minStack.getMin());  
     }
 }

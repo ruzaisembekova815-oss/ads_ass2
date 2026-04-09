@@ -1,3 +1,4 @@
+//Write a function to merge two sorted singly linked lists into a single sorted linked list.
 import java.util.Scanner;
 
 class ListNode {

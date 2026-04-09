@@ -1,4 +1,5 @@
-//Kadane's Algorithm. Find the contiguous subarray within an array (containing at least one number) which has the largest sum, and return the sum.
+/*Kadane's Algorithm. Find the contiguous subarray within an array (containing at least one number) 
+which has the largest sum, and return the sum.*/
 import java.util.*;
 
 public class KadaneAlghoritm {

@@ -1,3 +1,5 @@
+/*Given an array and an integer K, find the maximum for each and 
+every contiguous subarray of size K using a Double-Ended Queue (Deque).*/
 import java.util.*;
 
 public class SlidingWindowMaximum {
